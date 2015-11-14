@@ -1,19 +1,43 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>position</title>
-    </head>
-    <body>
-        <ul>
-            <li><img src="http://www.leebyunghun.kr/html/images/main/add_img01.jpg" alt="" /></li>
-            <li><img src="http://www.leebyunghun.kr/html/images/main/add_img02.jpg" alt="" /></li>
-            <li><img src="http://www.leebyunghun.kr/html/images/main/add_img03.jpg" alt="" /></li>
-        </ul>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </body>
-</html>
+<meta charset="UTF-8">
+<title>position</title>
+<style>
+/*포지션 엡솔루트 위치 잡아보기 첫번째 엘리먼트
+left,top,right,bottom
+*/
+
+.box1{background-color: #f00;}
+.box2{background-color: #00f;}
+.box3{background-color: #0f0;}
+div{position:absolute;border:1px #F00 solid;
+    background-size:cover;
+    background-position: center center;
+}
+.box1{
+    background-image: url(http://www.landroverkorea.co.kr/Images/Discovery-Tanz-dfc-fs_306-137978_1600x900.jpg?v=3);
+    left:0; right:50%; top:0; bottom:50%}
+.box2{right:0; left:50%; bottom:50%; top:0;
+background-image: url(http://www.landroverkorea.co.kr/Images/Discovery-LeeFarrant-dfc-fs_306-137979_1600x900.jpg?v=1);
+}
+.box3{top:50%; bottom:0; left:0; right:50%;
+background-image: url(http://www.landroverkorea.co.kr/Images/Discovery-Tanz-dfc-fs_306-137978_1600x900.jpg?v=3);
+}
+.box4{top:50%; bottom:0; right:0; left:50%;
+background-image: url(http://www.landroverkorea.co.kr/Images/Discovery-Tanz-dfc-fs_306-137978_1600x900.jpg?v=3);
+}
+
+
+/* absolute 기본위치 알아보기
+div{border:1px #F00 solid; width:100px; height:100px;}
+.box1{background-color: #f00;}
+.box2{background-color: #00f; position:absolute}
+.box3{background-color: #0f0;}
+*/
+</style>
+</head>
+<body>
+<div class="box1"></div>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
